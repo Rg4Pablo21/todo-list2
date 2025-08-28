@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor lateral */
+.div-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Botones superiores */
+.contenedor-botones {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-tarea,
+.btn-archivados {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s ease;
+}
+
+.btn-tarea {
+    background-color: #62b4f9;
+    color: #fff;
+}
+
+.btn-archivados {
+    background-color: #e3e3e3;
+    color: #333;
+}
+
+.btn-tarea:hover,
+.btn-archivados:hover {
+    transform: scale(1.05);
+}
+
+/* Tarjeta lateral */
+.tarjeta-informacion {
+    background-color: #f9f9f9;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 350px;
+    position: relative;
+}
+
+/* Estado */
+.estado {
+    background-color: #b9f6ca;
+    color: #0c4b33;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+/* Títulos y textos */
+.titulo-tarea {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #222;
+    font-weight: 600;
+}
+
+.descripcion-tarea {
+    font-size: 13px;
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Integrantes */
+.contenedor-integrantes {
+    display: flex;
+    gap: 12px;
+    margin-top: 5px;
+}
+
+.emoji-integrante {
+    font-size: 22px;
+}

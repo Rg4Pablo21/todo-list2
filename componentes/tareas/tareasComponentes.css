@@ -1,0 +1,24 @@
+/* CONTENEDOR GENERAL DE LA LISTA DE TAREAS */
+.div-tareas {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+/* Scroll fino y elegante */
+.div-tareas::-webkit-scrollbar {
+    width: 8px;
+}
+.div-tareas::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+.div-tareas::-webkit-scrollbar-track {
+    background: transparent;
+}

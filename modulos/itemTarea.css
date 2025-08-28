@@ -1,0 +1,108 @@
+/* ---------------------------
+   ESTILO DE CADA FILA DE TAREA
+---------------------------- */
+.item-tarea {
+    display: grid;
+    grid-template-columns: 3rem 1fr auto auto auto auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fff;
+    transition: background 0.2s ease;
+}
+
+.item-tarea:hover {
+    background-color: #f8f8f8;
+}
+
+/* Número de tarea */
+.tarea-numero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    font-weight: bold;
+    border: 1px solid #333;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    background-color: #fff;
+}
+
+/* Título */
+.tarea-titulo {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #222;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Estado */
+.tarea-estado {
+    padding: 0.3rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border: 1px solid #ccc;
+}
+
+.tarea-estado-completado {
+    background-color: #b9f6ca;
+    color: #0c4b33;
+    border: 1px solid #65c18c;
+}
+
+/* Fechas */
+.tarea-fecha-asignacion,
+.tarea-fecha-entrega {
+    font-size: 0.85rem;
+    color: #444;
+    white-space: nowrap;
+}
+
+/* Integrantes */
+.tarea-integrantes {
+    display: flex;
+    gap: 6px;
+}
+
+.tarea-integrante {
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 4px;
+    font-size: 1.2rem;
+    background-color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.tarea-integrante:hover {
+    transform: scale(1.1);
+}
+
+/* Botón eliminar */
+.tarea-eliminar {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #d9534f;
+    transition: transform 0.2s;
+}
+
+.tarea-eliminar:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .item-tarea {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+}
